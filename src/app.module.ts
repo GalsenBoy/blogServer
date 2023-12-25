@@ -6,7 +6,6 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { UsersModule } from './users/users.module';
 import { PostModule } from './post/post.module';
 import { UploadModule } from './upload/upload.module';
 import { MulterModule } from '@nestjs/platform-express';
@@ -21,7 +20,6 @@ import { MulterModule } from '@nestjs/platform-express';
       dataSourceOptions,
       // synchronize: true,
     ),
-    UsersModule,
     PostModule,
     UploadModule,
   ],
